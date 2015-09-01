@@ -3,7 +3,9 @@ MAINTAINER Leandro David Cacciagioni <leandro.21.2008@gmail.com>
 
 EXPOSE 6000
 
-CMD phantomjs --webdriver=6000
+VOLUME /var/phantomjs_storage
+
+CMD phantomjs --webdriver=6000 --disk-cache=true --cookies-file=/tmp/cookies.txt --load-images=true --max-disk-cache-size=524288 --local-storage-path=/var/phantomjs_storage
 
 ADD build /build
 
