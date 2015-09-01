@@ -9,3 +9,7 @@ This image is based in Debian Jessie and builds from the source PhantomJS. By de
 ```bash
 $ docker run --rm --name='some_phantomjs' -p '6000:6000' -d extremedevops/phantomjs:latest
 ```
+
+## Feedback
+
+Report any suggestion or issue [here](https://github.com/extremedevops/docker_phantomjs/issues)
